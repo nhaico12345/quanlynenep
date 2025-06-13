@@ -35,6 +35,10 @@ class AppTheme {
     color: textSecondaryColor,
   );
 
+  static var backgroundGrey;
+
+  static Color warningColor;
+
   // Theme Data
   static ThemeData get lightTheme {
     return ThemeData(

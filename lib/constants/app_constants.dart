@@ -68,4 +68,10 @@ class AppConstants {
   static const String behaviorCriteria = 'Hành vi';
   static const String cleaningCriteria = 'Vệ sinh';
   static const String learningCriteria = 'Học tập';
+
+  static String roleHeadmaster;
+
+  static String userManagementTitle;
+
+  static var roleMonitor;
 }
