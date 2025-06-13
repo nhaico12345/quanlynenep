@@ -69,9 +69,9 @@ class AppConstants {
   static const String cleaningCriteria = 'Vệ sinh';
   static const String learningCriteria = 'Học tập';
 
-  static String roleHeadmaster;
+  static String roleHeadmaster = ''; // Added initializer
 
-  static String userManagementTitle;
+  static String userManagementTitle = ''; // Added initializer
 
   static var roleMonitor;
 }

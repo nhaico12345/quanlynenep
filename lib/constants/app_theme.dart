@@ -35,9 +35,10 @@ class AppTheme {
     color: textSecondaryColor,
   );
 
+  // ignore: prefer_typing_uninitialized_variables
   static var backgroundGrey;
 
-  static Color warningColor;
+  static const Color warningColor = Color(0xFFFBC02D); // Vàng
 
   // Theme Data
   static ThemeData get lightTheme {
