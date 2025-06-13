@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.4" pages="6">
+  <diagram name="DFD Mức 2 - Quản lý Tài khoản" id="5LiJmlSsPLexkno-xz3n">
+    <mxGraphModel dx="2255" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-1" value="BAN GIÁM HIỆU&lt;br&gt;(Ban Nề nếp)" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-2" value="HỆ THỐNG&lt;br&gt;QUẢN LÝ HỌC SINH" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="767" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-3" value="FILE EXCEL" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="920" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-4" value="ACCOUNT&lt;br&gt;(Tài khoản)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="750" y="530" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-5" value="1.1 Tạo Tài khoản" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-6" value="1.2 Nhập Tài khoản theo Lô" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;size=0.07142857142857142;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-7" value="1.3 Cập nhật Thông tin Tài khoản" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="850" y="340" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-8" value="1.4 Xóa Tài khoản" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="280" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-9" value="1.5 Tìm kiếm Tài khoản" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-10" value="1.6 In Danh sách Tài khoản" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="720" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-11" value="Yêu cầu tạo TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-5">
+          <mxGeometry x="0.4172" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="110" />
+              <mxPoint x="260" y="170" />
+            </Array>
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-12" value="Yêu cầu nhập lô TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-6">
+          <mxGeometry x="-0.7619" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="340" />
+              <mxPoint x="160" y="340" />
+              <mxPoint x="160" y="370" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-13" value="Yêu cầu cập nhật TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-7">
+          <mxGeometry x="0.8274" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="110" />
+              <mxPoint x="-10" y="413" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-14" value="Yêu cầu xóa TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-8">
+          <mxGeometry x="0.641" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="130" />
+              <mxPoint x="170" y="490" />
+              <mxPoint x="620" y="490" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-15" value="Yêu cầu tìm TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-9">
+          <mxGeometry x="0.6825" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="90" />
+              <mxPoint x="210" y="580" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-16" value="Yêu cầu in DS TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-1" target="oy8sWA5c2XS4P5-0fGRL-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="680" />
+              <mxPoint x="160" y="680" />
+              <mxPoint x="160" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-17" value="Dữ liệu HS tạo TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-2" target="oy8sWA5c2XS4P5-0fGRL-6">
+          <mxGeometry x="0.9398" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="790" />
+              <mxPoint x="30" y="790" />
+              <mxPoint x="30" y="240" />
+              <mxPoint x="260" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-18" value="File Import TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-3" target="oy8sWA5c2XS4P5-0fGRL-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-19" value="Thông tin TK mới" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-5" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="55" />
+              <mxPoint x="450" y="55" />
+              <mxPoint x="450" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-20" value="DS TK nhập" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-6" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry x="0.3553" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="250" />
+              <mxPoint x="500" y="250" />
+              <mxPoint x="500" y="200" />
+              <mxPoint x="820" y="200" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-21" value="TT TK cập nhật" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;exitX=0.214;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-7" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry x="0.7499" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-22" value="TT TK cần xóa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;exitX=0.14;exitY=0.86;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-8" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry x="0.8692" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="460" />
+              <mxPoint x="890" y="460" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-23" value="Yêu cầu tìm kiếm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;entryX=0.15;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-9" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry x="0.6585" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="530" />
+              <mxPoint x="771" y="530" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-24" value="Kết quả tìm kiếm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-4" target="oy8sWA5c2XS4P5-0fGRL-9">
+          <mxGeometry x="0.5554" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="630" />
+              <mxPoint x="520" y="630" />
+              <mxPoint x="520" y="580" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-25" value="Yêu cầu DS TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-10" target="oy8sWA5c2XS4P5-0fGRL-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="660" />
+              <mxPoint x="760" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-26" value="DS TK từ DB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-4" target="oy8sWA5c2XS4P5-0fGRL-10">
+          <mxGeometry x="0.6297" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="740" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oy8sWA5c2XS4P5-0fGRL-27" value="File Export TK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" edge="1" parent="1" source="oy8sWA5c2XS4P5-0fGRL-10" target="oy8sWA5c2XS4P5-0fGRL-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="770" />
+              <mxPoint x="670" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="DFD Mức 2 - Quản lý Danh mục" id="i2eTKDdAVyC8PRrXRkdV">
+    <mxGraphModel dx="2903" dy="1844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ext-bgd-2" value="BAN GIÁM HIỆU&lt;br&gt;(Ban Nề nếp)" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="130" y="-20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvtpdt-2" value="GV TỔNG PHỤ TRÁCH ĐỘI" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvcn-2" value="GV CHỦ NHIỆM" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-htqlhs-2" value="HỆ THỐNG&lt;br&gt;QUẢN LÝ HỌC SINH" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="20" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-fileexcel-2" value="FILE EXCEL" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="354" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-dm-2" value="DANH MỤC&lt;br&gt;(Khối/Lớp, HS, Tiêu chí)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="640" y="20" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-2-1" value="2.1 Quản lý Khối/Lớp" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="520" y="220" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-2-2" value="2.2 Quản lý Học sinh" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="260" y="250" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-2-3" value="2.3 Quản lý Tiêu chí Thi đua" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="490" y="340" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-2-4" value="2.4 Quản lý Loại Vi phạm &amp; Thành tích" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="530" y="670" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="df-bgd-2-1" value="Yêu cầu QL Khối/Lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-bgd-2" target="proc-2-1" edge="1">
+          <mxGeometry x="0.6538" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="10" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-bgd-2-2" value="Yêu cầu QL Học sinh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-bgd-2" target="proc-2-2" edge="1">
+          <mxGeometry x="0.1154" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="10" />
+              <mxPoint x="80" y="310" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-bgd-2-3" value="Yêu cầu QL TC/LVP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-bgd-2" target="proc-2-3" edge="1">
+          <mxGeometry x="0.7879" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-bgd-2-4" value="Yêu cầu QL LVP/TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-bgd-2" target="proc-2-4" edge="1">
+          <mxGeometry x="0.7889" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="720" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvtpdt-2-1" value="Yêu cầu QL TC/LVP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvtpdt-2" target="proc-2-3" edge="1">
+          <mxGeometry x="0.902" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="550" />
+              <mxPoint x="550" y="550" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvtpdt-2-2" value="Yêu cầu QL LVP/TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvtpdt-2" target="proc-2-4" edge="1">
+          <mxGeometry x="0.7778" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-150" y="660" />
+              <mxPoint x="585" y="660" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvcn-2-1" value="Yêu cầu QL Lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvcn-2" target="proc-2-1" edge="1">
+          <mxGeometry x="0.5038" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-30" y="190" />
+              <mxPoint x="585" y="190" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvcn-2-2" value="Yêu cầu QL HS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvcn-2" target="proc-2-2" edge="1">
+          <mxGeometry x="0.7143" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="140" />
+              <mxPoint x="150" y="380" />
+              <mxPoint x="330" y="380" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-htqlhs-2-1" value="Đồng bộ HS/Lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-htqlhs-2" target="proc-2-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="730" />
+              <mxPoint x="-20" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-fileexcel-2-1" value="File Import Danh mục" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-fileexcel-2" target="proc-2-2" edge="1">
+          <mxGeometry x="-0.9185" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="270" />
+              <mxPoint x="940" y="270" />
+              <mxPoint x="940" y="330" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-ds-1" value="Dữ liệu Khối/Lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-1" target="ds-dm-2" edge="1">
+          <mxGeometry x="0.5294" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="250" />
+              <mxPoint x="350" y="150" />
+              <mxPoint x="330" y="150" />
+              <mxPoint x="330" y="55" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-ds-2" value="Dữ liệu Học sinh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-2" target="ds-dm-2" edge="1">
+          <mxGeometry x="0.4921" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="30" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-ds-3" value="Dữ liệu Tiêu chí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-3" target="ds-dm-2" edge="1">
+          <mxGeometry x="0.8594" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="450" />
+              <mxPoint x="220" y="450" />
+              <mxPoint x="220" y="110" />
+              <mxPoint x="720" y="110" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-ds-4" value="Dữ liệu Loại VP/TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-4" target="ds-dm-2" edge="1">
+          <mxGeometry x="0.9431" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="700" />
+              <mxPoint x="850" y="-50" />
+              <mxPoint x="720" y="-50" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-fileexcel-1" value="File Export Danh mục" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-1" target="ext-fileexcel-2" edge="1">
+          <mxGeometry x="0.9197" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="180" />
+              <mxPoint x="910" y="180" />
+              <mxPoint x="910" y="570" />
+              <mxPoint x="1100" y="570" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-fileexcel-2" value="File Export HS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-2" target="ext-fileexcel-2" edge="1">
+          <mxGeometry x="0.9118" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="310" />
+              <mxPoint x="800" y="730" />
+              <mxPoint x="1010" y="730" />
+              <mxPoint x="1010" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-fileexcel-3" value="File Export TC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-3" target="ext-fileexcel-2" edge="1">
+          <mxGeometry x="0.7073" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="380" />
+              <mxPoint x="650" y="380" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p2-fileexcel-4" value="File Export LVP/TT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-2-4" target="ext-fileexcel-2" edge="1">
+          <mxGeometry x="-0.4094" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="800" />
+              <mxPoint x="1190" y="800" />
+              <mxPoint x="1190" y="384" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="DFD Mức 2 - Quản lý Sự vụ &amp; Chấm điểm" id="5ADiUG1cjKzfgLuQm2o8">
+    <mxGraphModel dx="1214" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ext-tvcd-3" value="THÀNH VIÊN ĐỘI CỜ ĐỎ" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-bvtr-3" value="BẢO VỆ TRƯỜNG" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="20" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvcn-3" value="GV CHỦ NHIỆM" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="20" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvtpdt-3" value="GV TỔNG PHỤ TRÁCH ĐỘI" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="60" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-suvu-diem-3" value="SỰ VỤ &amp; ĐIỂM&lt;br&gt;(Ghi nhận, Xử lý điểm)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="585" y="70" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-danhmuc-3" value="DANH MỤC&lt;br&gt;(Khối/Lớp, HS, Tiêu chí)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="930" y="280" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-3-1" value="3.1 Ghi nhận Sự vụ" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="400" y="180" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-3-2" value="3.2 Tổng hợp &amp; Xác minh Sự vụ" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="240" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-3-3" value="3.3 Xử lý &amp; Quy đổi Điểm" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="460" y="370" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-3-4" value="3.4 Chấm điểm Thi đua Tuần" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="130" y="380" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="df-tvcd-3-1" value="Ghi nhận sự vụ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-tvcd-3" target="proc-3-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-bvtr-3-1" value="Ghi nhận VP giờ giấc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-bvtr-3" target="proc-3-1" edge="1">
+          <mxGeometry x="-0.45" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="130" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvcn-3-1" value="TT sự vụ lớp/Nhận xét HS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvcn-3" target="proc-3-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="210" />
+              <mxPoint x="80" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-gvtpdt-3-1" value="Yêu cầu Tổng hợp/Xác minh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvtpdt-3" target="proc-3-2" edge="1">
+          <mxGeometry x="0.5185" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="330" />
+              <mxPoint x="640" y="330" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-danhmuc-3-1" value="TT Danh mục" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-danhmuc-3" target="proc-3-1" edge="1">
+          <mxGeometry x="0.8554" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="55" />
+              <mxPoint x="900" y="55" />
+              <mxPoint x="900" y="190" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-danhmuc-3-2" value="Tiêu chí chấm điểm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-danhmuc-3" target="proc-3-3" edge="1">
+          <mxGeometry x="0.5625" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="530" />
+              <mxPoint x="590" y="530" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-danhmuc-3-3" value="TT Lớp/HS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-danhmuc-3" target="proc-3-2" edge="1">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="430" />
+              <mxPoint x="760" y="430" />
+              <mxPoint x="760" y="270" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-ds-1" value="Sự vụ thô" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-1" target="ds-suvu-diem-3" edge="1">
+          <mxGeometry x="0.0952" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="105" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-ds-2" value="Sự vụ đã xác minh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-2" target="ds-suvu-diem-3" edge="1">
+          <mxGeometry x="0.75" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="290" />
+              <mxPoint x="860" y="105" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-ds-3" value="Điểm đã quy đổi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-3" target="ds-suvu-diem-3" edge="1">
+          <mxGeometry x="0.9503" y="-5" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="470" />
+              <mxPoint x="820" y="170" />
+              <mxPoint x="665" y="170" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-ds-4" value="Điểm thi đua tuần" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-4" target="ds-suvu-diem-3" edge="1">
+          <mxGeometry x="0.4752" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="450" />
+              <mxPoint x="350" y="80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-sub-1" value="Sự vụ thô" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-1" target="proc-3-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-sub-2" value="Sự vụ đã xác minh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-2" target="proc-3-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p3-sub-3" value="Điểm đã quy đổi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-3-3" target="proc-3-4" edge="1">
+          <mxGeometry x="0.8889" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="510" />
+              <mxPoint x="430" y="510" />
+              <mxPoint x="430" y="640" />
+              <mxPoint x="200" y="640" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="DFD Mức 2 - Thống kê &amp; Xếp loại" id="k79O7R6Pb9Eo1dBs6vic">
+    <mxGraphModel dx="1214" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ext-bgd-4" value="BAN GIÁM HIỆU&lt;br&gt;(Ban Nề nếp)" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="590" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvtpdt-4" value="GV TỔNG PHỤ TRÁCH ĐỘI" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="10" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-hs-4" value="HỌC SINH" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="410" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-lt-4" value="LỚP TRƯỞNG" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="210" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-suvu-diem-4" value="SỰ VỤ &amp; ĐIỂM&lt;br&gt;(Ghi nhận, Xử lý điểm)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="120" y="70" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-ketqua-4" value="KẾT QUẢ THI ĐUA&lt;br&gt;(Xếp hạng, Tổng hợp)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="450" y="20" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-4-1" value="4.1 Tổng hợp Điểm Thi đua" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="600" y="120" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-4-2" value="4.2 Xếp hạng Thi đua" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="510" y="350" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-4-3" value="4.3 Công bố Kết quả" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="230" y="420" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="df-ds-suvu-4-1" value="Điểm số Nề nếp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-suvu-diem-4" target="proc-4-1" edge="1">
+          <mxGeometry x="0.55" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="170" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-ds-1" value="KQ Xếp hạng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-2" target="ds-ketqua-4" edge="1">
+          <mxGeometry x="0.7391" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="330" />
+              <mxPoint x="420" y="330" />
+              <mxPoint x="420" y="80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-ds-2" value="KQ Công bố" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-3" target="ds-ketqua-4" edge="1">
+          <mxGeometry x="0.8113" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="40" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-bgd-1" value="Báo cáo Tổng hợp/Xếp hạng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="proc-4-3" target="ext-bgd-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="480" />
+              <mxPoint x="530" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-gvtpdt-1" value="Báo cáo Tổng hợp/Xếp hạng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-3" target="ext-gvtpdt-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-hs-1" value="Lịch sử VP/TB cá nhân" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-3" target="ext-hs-4" edge="1">
+          <mxGeometry x="0.5714" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="510" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-lt-1" value="KQ Thi đua lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-3" target="ext-lt-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-sub-1" value="Điểm tổng hợp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-1" target="proc-4-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="330" />
+              <mxPoint x="630" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p4-sub-2" value="Xếp hạng hoàn chỉnh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-4-2" target="proc-4-3" edge="1">
+          <mxGeometry x="0.4667" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="DFD Mức 2 - Báo cáo" id="_dsrhUTnLe2cBhDqtbyK">
+    <mxGraphModel dx="2383" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ext-bgd-5" value="BAN GIÁM HIỆU&lt;br&gt;(Ban Nề nếp)" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="383" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvtpdt-5" value="GV TỔNG PHỤ TRÁCH ĐỘI" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="90" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-gvcn-5" value="GV CHỦ NHIỆM" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="940" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-fileexcel-5" value="FILE EXCEL" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="450" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-htin-5" value="HỆ THỐNG IN ẤN" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="950" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-lt-5" value="LỚP TRƯỞNG" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="620" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-suvu-diem-5" value="SỰ VỤ &amp; ĐIỂM&lt;br&gt;(Ghi nhận, Xử lý điểm)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="540" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-ketqua-5" value="KẾT QUẢ THI ĐUA&lt;br&gt;(Xếp hạng, Tổng hợp)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="210" y="30" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-5-1" value="5.1 Tạo Báo cáo Chi tiết" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="460" y="150" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-5-2" value="5.2 Hiển thị Thống kê Trực quan" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="280" y="270" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-5-3" value="5.3 Tìm kiếm &amp; Lọc Dữ liệu" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="290" y="540" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="df-ds-suvu-5-1" value="Dữ liệu chi tiết sự vụ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-suvu-diem-5" target="proc-5-1" edge="1">
+          <mxGeometry x="0.8181" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-250" y="55" />
+              <mxPoint x="40" y="55" />
+              <mxPoint x="40" y="120" />
+              <mxPoint x="490" y="120" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-suvu-5-2" value="Dữ liệu thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-suvu-diem-5" target="proc-5-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-180" y="260" />
+              <mxPoint x="330" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-suvu-5-3" value="Dữ liệu tìm kiếm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-suvu-diem-5" target="proc-5-3" edge="1">
+          <mxGeometry x="0.5666" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-220" y="660" />
+              <mxPoint x="50" y="660" />
+              <mxPoint x="50" y="590" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-ketqua-5-1" value="Dữ liệu tổng hợp KQ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-ketqua-5" target="proc-5-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-ketqua-5-2" value="Dữ liệu thống kê KQ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-ketqua-5" target="proc-5-2" edge="1">
+          <mxGeometry x="0.7193" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="170" />
+              <mxPoint x="100" y="170" />
+              <mxPoint x="100" y="330" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-ketqua-5-3" value="Dữ liệu tìm kiếm KQ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-ketqua-5" target="proc-5-3" edge="1">
+          <mxGeometry x="0.8543" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="135" />
+              <mxPoint x="30" y="135" />
+              <mxPoint x="30" y="480" />
+              <mxPoint x="250" y="480" />
+              <mxPoint x="250" y="570" />
+            </Array>
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-bgd-1" value="Báo cáo/Thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-bgd-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="180" />
+              <mxPoint x="810" y="50" />
+              <mxPoint x="1070" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-bgd-2" value="Biểu đồ thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc-5-2" target="ext-bgd-5" edge="1">
+          <mxGeometry x="0.625" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="420" />
+              <mxPoint x="960" y="420" />
+              <mxPoint x="960" y="413" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-gvtpdt-1" value="Báo cáo/Thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-gvtpdt-5" edge="1">
+          <mxGeometry x="0.7502" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="240" />
+              <mxPoint x="60" y="240" />
+              <mxPoint x="60" y="430" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-gvtpdt-2" value="Biểu đồ thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="ext-gvtpdt-5" edge="1">
+          <mxGeometry x="-0.6002" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="430" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-gvcn-1" value="Báo cáo/Thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-gvcn-5" edge="1">
+          <mxGeometry x="0.7778" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="80" />
+              <mxPoint x="730" y="80" />
+              <mxPoint x="730" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-gvcn-2" value="Biểu đồ thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="ext-gvcn-5" edge="1">
+          <mxGeometry x="0.8438" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="330" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-fileexcel-1" value="Báo cáo Export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-fileexcel-5" edge="1">
+          <mxGeometry x="0.8368" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="170" />
+              <mxPoint x="800" y="700" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-fileexcel-2" value="Thống kê Export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="ext-fileexcel-5" edge="1">
+          <mxGeometry x="0.8644" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="390" />
+              <mxPoint x="610" y="390" />
+              <mxPoint x="610" y="610" />
+              <mxPoint x="570" y="610" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-fileexcel-3" value="KQ tìm kiếm Export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-3" target="ext-fileexcel-5" edge="1">
+          <mxGeometry x="0.3911" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="700" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-htin-1" value="Yêu cầu in báo cáo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-htin-5" edge="1">
+          <mxGeometry x="0.8205" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="160" />
+              <mxPoint x="750" y="580" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-htin-2" value="Yêu cầu in thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="ext-htin-5" edge="1">
+          <mxGeometry x="0.6787" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="360" />
+              <mxPoint x="680" y="650" />
+              <mxPoint x="1010" y="650" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-htin-3" value="Yêu cầu in KQ tìm kiếm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-3" target="ext-htin-5" edge="1">
+          <mxGeometry x="0.5837" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="480" />
+              <mxPoint x="1030" y="480" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-lt-1" value="Báo cáo lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="ext-lt-5" edge="1">
+          <mxGeometry x="0.7857" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="120" />
+              <mxPoint x="680" y="120" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-lt-2" value="Thống kê lớp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="ext-lt-5" edge="1">
+          <mxGeometry x="0.4999" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="260" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-sub-1" value="Dữ liệu báo cáo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-1" target="proc-5-3" edge="1">
+          <mxGeometry x="0.4998" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="570" />
+            </Array>
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p5-sub-2" value="Dữ liệu thống kê" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-5-2" target="proc-5-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="360" />
+              <mxPoint x="330" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="DFD Mức 2 - Tích hợp Sổ đầu bài" id="1qeaG_7Hb2Lm6kdqZKQG">
+    <mxGraphModel dx="1214" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ext-gvbm-6" value="GV BỘ MÔN" style="shape=extEntity;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-suvu-diem-6" value="SỰ VỤ &amp; ĐIỂM&lt;br&gt;(Ghi nhận, Xử lý điểm)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="440" y="160" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-danhmuc-6" value="DANH MỤC&lt;br&gt;(Khối/Lớp, HS, Tiêu chí)" style="shape=partialRectangle;right=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="585" y="374" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-6-1" value="6.1 Ghi nhận Sự vụ từ Sổ đầu bài" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="190" y="384" width="120" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="df-gvbm-6-1" value="Ghi nhận từ SĐB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ext-gvbm-6" target="proc-6-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-ds-danhmuc-6-1" value="TT Lớp/Học sinh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="ds-danhmuc-6" target="proc-6-1" edge="1">
+          <mxGeometry x="0.4221" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="300" />
+              <mxPoint x="410" y="300" />
+              <mxPoint x="410" y="414" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="df-p6-ds-1" value="Sự vụ từ SĐB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=0;fontSize=10;" parent="1" source="proc-6-1" target="ds-suvu-diem-6" edge="1">
+          <mxGeometry x="-0.6418" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="55" />
+              <mxPoint x="520" y="55" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
