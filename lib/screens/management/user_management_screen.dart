@@ -384,7 +384,6 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                 icon: Icons.delete,
                 type: ButtonType.text,
                 textColor: AppTheme.errorColor,
-                iconColor: AppTheme.errorColor,
                 onPressed: () {
                   _showDeleteConfirmationDialog(context, user);
                 },
@@ -437,8 +436,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
               children: [
                 CustomTextField(
                   controller: usernameController,
-                  labelText: 'Tên đăng nhập',
-                  hintText: 'Nhập tên đăng nhập',
+                  label: 'Tên đăng nhập',
+                  hint: 'Nhập tên đăng nhập',
                   enabled: !isEditing, // Không cho phép sửa tên đăng nhập khi đang sửa
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -453,8 +452,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                 const SizedBox(height: 16),
                 CustomTextField(
                   controller: fullNameController,
-                  labelText: 'Họ và tên',
-                  hintText: 'Nhập họ và tên',
+                  label: 'Họ và tên',
+                  hint: 'Nhập họ và tên',
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Vui lòng nhập họ và tên';
@@ -465,14 +464,14 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                 const SizedBox(height: 16),
                 CustomTextField(
                   controller: emailController,
-                  labelText: 'Email',
-                  hintText: 'Nhập địa chỉ email',
+                  label: 'Email',
+                  hint: 'Nhập địa chỉ email',
                   keyboardType: TextInputType.emailAddress,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Vui lòng nhập địa chỉ email';
                     }
-                    if (!Validators.isValidEmail(value)) {
+                    if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
                       return 'Địa chỉ email không hợp lệ';
                     }
                     return null;
@@ -481,14 +480,14 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                 const SizedBox(height: 16),
                 CustomTextField(
                   controller: phoneController,
-                  labelText: 'Số điện thoại',
-                  hintText: 'Nhập số điện thoại',
+                  label: 'Số điện thoại',
+                  hint: 'Nhập số điện thoại',
                   keyboardType: TextInputType.phone,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Vui lòng nhập số điện thoại';
                     }
-                    if (!Validators.isValidPhone(value)) {
+                    if (!RegExp(r'^[0-9]{10}$').hasMatch(value)) {
                       return 'Số điện thoại không hợp lệ';
                     }
                     return null;
@@ -511,8 +510,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                   const SizedBox(height: 16),
                   CustomTextField(
                     controller: passwordController,
-                    labelText: 'Mật khẩu',
-                    hintText: 'Nhập mật khẩu',
+                    label: 'Mật khẩu',
+                    hint: 'Nhập mật khẩu',
                     obscureText: true,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -527,8 +526,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
                   const SizedBox(height: 16),
                   CustomTextField(
                     controller: confirmPasswordController,
-                    labelText: 'Xác nhận mật khẩu',
-                    hintText: 'Nhập lại mật khẩu',
+                    label: 'Xác nhận mật khẩu',
+                    hint: 'Nhập lại mật khẩu',
                     obscureText: true,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -634,8 +633,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
             children: [
               CustomTextField(
                 controller: newPasswordController,
-                labelText: 'Mật khẩu mới',
-                hintText: 'Nhập mật khẩu mới',
+                label: 'Mật khẩu mới',
+                hint: 'Nhập mật khẩu mới',
                 obscureText: true,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -650,8 +649,8 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: confirmPasswordController,
-                labelText: 'Xác nhận mật khẩu',
-                hintText: 'Nhập lại mật khẩu mới',
+                label: 'Xác nhận mật khẩu',
+                hint: 'Nhập lại mật khẩu mới',
                 obscureText: true,
                 validator: (value) {
                   if (value == null || value.isEmpty) {

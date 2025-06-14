@@ -45,9 +45,9 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
           isScrollable: true,
           tabs: const [
             Tab(text: 'Tất cả'),
-            Tab(text: AppConstants.disciplineCategoryNeatness),
-            Tab(text: AppConstants.disciplineCategoryLearning),
-            Tab(text: AppConstants.disciplineCategoryOther),
+            Tab(text: 'Nề nếp'),
+            Tab(text: 'Học tập'),
+            Tab(text: 'Khác'),
           ],
         ),
       ),
@@ -64,9 +64,9 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
               controller: _tabController,
               children: [
                 _buildCriteriaList('all'),
-                _buildCriteriaList(AppConstants.disciplineCategoryNeatness),
-                _buildCriteriaList(AppConstants.disciplineCategoryLearning),
-                _buildCriteriaList(AppConstants.disciplineCategoryOther),
+                _buildCriteriaList('neatness'),
+                _buildCriteriaList('learning'),
+                _buildCriteriaList('other'),
               ],
             ),
           ),
@@ -100,7 +100,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
           Expanded(
             child: CustomTextField(
               controller: _searchController,
-              hintText: 'Tìm kiếm tiêu chí...',
+              hint: 'Tìm kiếm tiêu chí...',
               prefixIcon: Icons.search,
               onChanged: (value) {
                 setState(() {
@@ -128,7 +128,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '1',
         'name': 'Vệ sinh lớp học',
-        'category': AppConstants.disciplineCategoryNeatness,
+        'category': 'Nề nếp',
         'description': 'Đánh giá tình trạng vệ sinh của lớp học',
         'maxPoints': 10,
         'minPoints': 0,
@@ -138,7 +138,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '2',
         'name': 'Trang phục học sinh',
-        'category': AppConstants.disciplineCategoryNeatness,
+        'category': 'Nề nếp',
         'description': 'Đánh giá việc mặc đồng phục đúng quy định',
         'maxPoints': 10,
         'minPoints': 0,
@@ -148,7 +148,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '3',
         'name': 'Đi học đúng giờ',
-        'category': AppConstants.disciplineCategoryLearning,
+        'category': 'Học tập',
         'description': 'Đánh giá việc đi học đúng giờ của học sinh',
         'maxPoints': 10,
         'minPoints': 0,
@@ -158,7 +158,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '4',
         'name': 'Nộp bài tập đầy đủ',
-        'category': AppConstants.disciplineCategoryLearning,
+        'category': 'Học tập',
         'description': 'Đánh giá việc nộp bài tập đầy đủ và đúng hạn',
         'maxPoints': 10,
         'minPoints': 0,
@@ -168,7 +168,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '5',
         'name': 'Tham gia hoạt động ngoại khóa',
-        'category': AppConstants.disciplineCategoryOther,
+        'category': 'Khác',
         'description': 'Đánh giá mức độ tham gia các hoạt động ngoại khóa',
         'maxPoints': 10,
         'minPoints': 0,
@@ -178,7 +178,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '6',
         'name': 'Hút thuốc trong trường',
-        'category': AppConstants.disciplineCategoryNeatness,
+        'category': 'Nề nếp',
         'description': 'Vi phạm hút thuốc trong khuôn viên trường',
         'maxPoints': -10,
         'minPoints': -10,
@@ -188,7 +188,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
       {
         'id': '7',
         'name': 'Đánh nhau',
-        'category': AppConstants.disciplineCategoryOther,
+        'category': 'Khác',
         'description': 'Vi phạm đánh nhau trong trường học',
         'maxPoints': -20,
         'minPoints': -20,
@@ -406,7 +406,6 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
                 icon: Icons.delete,
                 type: ButtonType.text,
                 textColor: AppTheme.errorColor,
-                iconColor: AppTheme.errorColor,
                 onPressed: () {
                   _showDeleteConfirmationDialog(context, criteria);
                 },
@@ -420,11 +419,11 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
 
   Color _getCategoryColor(String category) {
     switch (category) {
-      case AppConstants.disciplineCategoryNeatness:
+      case 'Nề nếp':
         return Colors.blue;
-      case AppConstants.disciplineCategoryLearning:
+      case 'Học tập':
         return Colors.green;
-      case AppConstants.disciplineCategoryOther:
+      case 'Khác':
         return Colors.purple;
       default:
         return AppTheme.primaryColor;
@@ -445,7 +444,7 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
 
     String selectedCategory = isEditing
         ? criteria['category']
-        : AppConstants.disciplineCategoryNeatness;
+        : 'Nề nếp';
     bool isViolation = isEditing ? criteria['isViolation'] : false;
 
     showDialog(
@@ -458,8 +457,8 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
             children: [
               CustomTextField(
                 controller: nameController,
-                labelText: 'Tên tiêu chí',
-                hintText: 'Nhập tên tiêu chí',
+                label: 'Tên tiêu chí',
+                hint: 'Nhập tên tiêu chí',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập tên tiêu chí';
@@ -472,9 +471,9 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
                 label: 'Danh mục',
                 value: selectedCategory,
                 items: [
-                  AppConstants.disciplineCategoryNeatness,
-                  AppConstants.disciplineCategoryLearning,
-                  AppConstants.disciplineCategoryOther,
+                  'Nề nếp',
+                  'Học tập',
+                  'Khác',
                 ],
                 onChanged: (value) {
                   selectedCategory = value!;
@@ -483,8 +482,8 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
               const SizedBox(height: 16),
               CustomTextField(
                 controller: descriptionController,
-                labelText: 'Mô tả',
-                hintText: 'Nhập mô tả tiêu chí',
+                label: 'Mô tả',
+                hint: 'Nhập mô tả tiêu chí',
                 maxLines: 3,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -499,8 +498,8 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
                   Expanded(
                     child: CustomTextField(
                       controller: maxPointsController,
-                      labelText: 'Điểm tối đa',
-                      hintText: 'Nhập điểm tối đa',
+                      label: 'Điểm tối đa',
+                      hint: 'Nhập điểm tối đa',
                       keyboardType: TextInputType.number,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -514,8 +513,8 @@ class _CriteriaManagementScreenState extends State<CriteriaManagementScreen>
                   Expanded(
                     child: CustomTextField(
                       controller: minPointsController,
-                      labelText: 'Điểm tối thiểu',
-                      hintText: 'Nhập điểm tối thiểu',
+                      label: 'Điểm tối thiểu',
+                      hint: 'Nhập điểm tối thiểu',
                       keyboardType: TextInputType.number,
                       validator: (value) {
                         if (value == null || value.isEmpty) {

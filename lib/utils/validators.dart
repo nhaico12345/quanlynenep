@@ -4,8 +4,9 @@ class Validators {
     if (value == null || value.isEmpty) {
       return 'Vui lòng nhập email';
     }
+    // SỬA LỖI: Thay đổi dấu phân cách chuỗi từ ' thành " để tránh lỗi cú pháp.
     final emailRegex = RegExp(
-        r'^[a-zA-Z0-9.a-zA-Z0-9.!#$%&\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+');
+        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$");
     if (!emailRegex.hasMatch(value)) {
       return 'Email không hợp lệ';
     }

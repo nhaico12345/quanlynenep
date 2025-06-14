@@ -73,7 +73,7 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
           Expanded(
             child: CustomTextField(
               controller: _searchController,
-              hintText: 'Tìm kiếm lớp học...',
+              hint: 'Tìm kiếm lớp học...',
               prefixIcon: Icons.search,
               onChanged: (value) {
                 setState(() {
@@ -325,7 +325,6 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
                 icon: Icons.delete,
                 type: ButtonType.text,
                 textColor: AppTheme.errorColor,
-                iconColor: AppTheme.errorColor,
                 onPressed: () {
                   _showDeleteConfirmationDialog(context, classItem);
                 },
@@ -358,8 +357,8 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
             children: [
               CustomTextField(
                 controller: classNameController,
-                labelText: 'Tên lớp',
-                hintText: 'Nhập tên lớp (VD: 10A1)',
+                label: 'Tên lớp',
+                hint: 'Nhập tên lớp (VD: 10A1)',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập tên lớp';
@@ -370,8 +369,8 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: gradeController,
-                labelText: 'Khối',
-                hintText: 'Nhập khối (VD: 10)',
+                label: 'Khối',
+                hint: 'Nhập khối (VD: 10)',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập khối';
@@ -382,8 +381,8 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: homeTeacherController,
-                labelText: 'Giáo viên chủ nhiệm',
-                hintText: 'Nhập tên giáo viên chủ nhiệm',
+                label: 'Giáo viên chủ nhiệm',
+                hint: 'Nhập tên giáo viên chủ nhiệm',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập tên giáo viên chủ nhiệm';
@@ -394,8 +393,8 @@ class _ClassManagementScreenState extends State<ClassManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: schoolYearController,
-                labelText: 'Năm học',
-                hintText: 'Nhập năm học (VD: 2022-2023)',
+                label: 'Năm học',
+                hint: 'Nhập năm học (VD: 2022-2023)',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập năm học';

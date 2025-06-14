@@ -76,7 +76,7 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               Expanded(
                 child: CustomTextField(
                   controller: _searchController,
-                  hintText: 'Tìm kiếm học sinh...',
+                  hint: 'Tìm kiếm học sinh...',
                   prefixIcon: Icons.search,
                   onChanged: (value) {
                     setState(() {
@@ -449,7 +449,6 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
                 icon: Icons.delete,
                 type: ButtonType.text,
                 textColor: AppTheme.errorColor,
-                iconColor: AppTheme.errorColor,
                 onPressed: () {
                   _showDeleteConfirmationDialog(context, student);
                 },
@@ -489,8 +488,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
             children: [
               CustomTextField(
                 controller: studentIdController,
-                labelText: 'Mã học sinh',
-                hintText: 'Nhập mã học sinh',
+                label: 'Mã học sinh',
+                hint: 'Nhập mã học sinh',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập mã học sinh';
@@ -501,8 +500,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: fullNameController,
-                labelText: 'Họ và tên',
-                hintText: 'Nhập họ và tên học sinh',
+                label: 'Họ và tên',
+                hint: 'Nhập họ và tên học sinh',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập họ và tên học sinh';
@@ -522,8 +521,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: dateOfBirthController,
-                labelText: 'Ngày sinh',
-                hintText: 'Nhập ngày sinh (DD/MM/YYYY)',
+                label: 'Ngày sinh',
+                hint: 'Nhập ngày sinh (DD/MM/YYYY)',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập ngày sinh';
@@ -543,8 +542,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: addressController,
-                labelText: 'Địa chỉ',
-                hintText: 'Nhập địa chỉ',
+                label: 'Địa chỉ',
+                hint: 'Nhập địa chỉ',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập địa chỉ';
@@ -555,8 +554,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: parentNameController,
-                labelText: 'Tên phụ huynh',
-                hintText: 'Nhập tên phụ huynh',
+                label: 'Tên phụ huynh',
+                hint: 'Nhập tên phụ huynh',
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Vui lòng nhập tên phụ huynh';
@@ -567,8 +566,8 @@ class _StudentManagementScreenState extends State<StudentManagementScreen> {
               const SizedBox(height: 16),
               CustomTextField(
                 controller: parentPhoneController,
-                labelText: 'Số điện thoại phụ huynh',
-                hintText: 'Nhập số điện thoại phụ huynh',
+                label: 'Số điện thoại phụ huynh',
+                hint: 'Nhập số điện thoại phụ huynh',
                 keyboardType: TextInputType.phone,
                 validator: (value) {
                   if (value == null || value.isEmpty) {

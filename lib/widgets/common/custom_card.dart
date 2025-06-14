@@ -135,6 +135,9 @@ class InfoCard extends StatelessWidget {
   final Widget? trailing;
   final VoidCallback? onTap;
   final Color? iconColor;
+  // SỬA LỖI: Thêm tham số margin và footer
+  final EdgeInsetsGeometry? margin;
+  final Widget? footer;
 
   const InfoCard({
     Key? key,
@@ -144,65 +147,79 @@ class InfoCard extends StatelessWidget {
     this.trailing,
     this.onTap,
     this.iconColor,
+    this.margin,
+    this.footer,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return CustomCard(
       onTap: onTap,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      margin: const EdgeInsets.symmetric(vertical: 4),
+      padding: const EdgeInsets.all(16),
+      // SỬA LỖI: Sử dụng tham số margin, nếu không có thì dùng giá trị mặc định
+      margin: margin ?? const EdgeInsets.symmetric(vertical: 4),
       elevation: 1,
-      child: Row(
+      // SỬA LỖI: Bọc nội dung trong Column để thêm footer
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (icon != null) ...[            
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: (iconColor ?? AppTheme.primaryColor).withOpacity(0.1),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Icon(
-                icon,
-                color: iconColor ?? AppTheme.primaryColor,
-                size: 20,
-              ),
-            ),
-            const SizedBox(width: 12),
-          ],
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: AppTheme.textPrimaryColor,
+          Row(
+            children: [
+              if (icon != null) ...[
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: (iconColor ?? AppTheme.primaryColor).withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    icon,
+                    color: iconColor ?? AppTheme.primaryColor,
+                    size: 20,
                   ),
                 ),
-                if (subtitle != null) ...[                  
-                  const SizedBox(height: 4),
-                  Text(
-                    subtitle!,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: AppTheme.textSecondaryColor,
-                    ),
-                  ),
-                ],
+                const SizedBox(width: 12),
               ],
-            ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: AppTheme.textPrimaryColor,
+                      ),
+                    ),
+                    if (subtitle != null) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        subtitle!,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textSecondaryColor,
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              if (trailing != null)
+                trailing!
+              else if (onTap != null)
+                const Icon(
+                  Icons.arrow_forward_ios,
+                  color: AppTheme.textSecondaryColor,
+                  size: 16,
+                ),
+            ],
           ),
-          if (trailing != null)
-            trailing!
-          else if (onTap != null)
-            const Icon(
-              Icons.arrow_forward_ios,
-              color: AppTheme.textSecondaryColor,
-              size: 16,
-            ),
+          // SỬA LỖI: Hiển thị footer nếu nó được cung cấp
+          if (footer != null) ...[
+            const Divider(height: 24, thickness: 1),
+            footer!,
+          ]
         ],
       ),
     );

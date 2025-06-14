@@ -345,7 +345,7 @@ class _DisciplineScreenState extends State<DisciplineScreen>
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Xác nhận lưu'),
-        content: const Text(
+        content: Text(
             'Bạn có chắc chắn muốn lưu điểm nề nếp cho lớp $_selectedClass không?'),
         actions: [
           CustomButton(

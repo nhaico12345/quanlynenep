@@ -1,3 +1,5 @@
+// lib/constants/app_constants.dart
+
 class AppConstants {
   // App Info
   static const String appName = 'Quản Lý Nề Nếp';
@@ -18,7 +20,9 @@ class AppConstants {
   static const String roleAdmin = 'ADMIN'; // Ban giám hiệu
   static const String roleTeacher = 'TEACHER'; // Giáo viên
   static const String roleDisciplineTeam = 'DISCIPLINE_TEAM'; // Ban nề nếp
-  
+  // SỬA LỖI: Định nghĩa kiểu dữ liệu và giá trị cho roleMonitor.
+  static const String roleMonitor = 'MONITOR'; 
+
   // Form Labels
   static const String usernameLabel = 'Tên đăng nhập';
   static const String passwordLabel = 'Mật khẩu';
@@ -68,10 +72,12 @@ class AppConstants {
   static const String behaviorCriteria = 'Hành vi';
   static const String cleaningCriteria = 'Vệ sinh';
   static const String learningCriteria = 'Học tập';
+  // SỬA LỖI: Bổ sung các hằng số còn thiếu
+  static const String disciplineCategoryNeatness = 'Nề nếp';
+  static const String disciplineCategoryLearning = 'Học tập';
+  static const String disciplineCategoryOther = 'Khác';
 
-  static String roleHeadmaster = ''; // Added initializer
-
-  static String userManagementTitle = ''; // Added initializer
-
-  static var roleMonitor;
+  // SỬA LỖI: Đảm bảo các biến được khởi tạo đúng
+  static String roleHeadmaster = 'HEADMASTER';
+  static String userManagementTitle = 'Quản lý người dùng';
 }
